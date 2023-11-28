@@ -1,53 +1,60 @@
 import { useRef, useEffect } from 'react';
 import { PerspectiveCamera } from '@react-three/drei';
-import { gsap } from 'gsap';
 
-export const CameraTimeline = new gsap.timeline({
-  paused: true,
-});
+import { AnimationTimeline } from './AnimationTimeline';
 
-function AnimatedCamera(props) {
+function AnimatedCamera() {
   const cameraRef = useRef();
 
   useEffect(() => {
-    CameraTimeline.to(
+    AnimationTimeline.to(
       cameraRef.current.position,
       {
-        x: -15,
+        x: 0,
         y: 0,
-        z: 13,
+        z: 12,
       },
-      'full shot'
+      'fullshot'
     );
 
-    CameraTimeline.to(
-      cameraRef.current.rotation,
-      {
-        x: 0,
-        y: -0.8,
-        z: 0,
-      },
-      'full shot'
-    );
-
-    CameraTimeline.to(
+    AnimationTimeline.to(
       cameraRef.current.position,
       {
-        x: -8,
-        y: 2,
-        z: 0,
+        x: 0,
+        y: 0.1,
+        z: 12,
       },
-      'end'
+      'fullshot1'
     );
 
-    CameraTimeline.to(
-      cameraRef.current.rotation,
+    AnimationTimeline.to(
+      cameraRef.current.position,
+      {
+        x: 0.1,
+        y: 0.1,
+        z: 12,
+      },
+      'fullshot2'
+    );
+
+    AnimationTimeline.to(
+      cameraRef.current.position,
       {
         x: 0,
-        y: -1.5,
-        z: 0,
+        y: 0,
+        z: 10,
       },
-      'end'
+      'side view'
+    );
+
+    AnimationTimeline.to(
+      cameraRef.current.position,
+      {
+        x: 0,
+        y: 0.1,
+        z: 10,
+      },
+      'closeup'
     );
   }, [cameraRef]);
 

@@ -1,66 +1,69 @@
-import { useRef, useEffect } from 'react';
+// import { useRef, useEffect } from 'react';
 import React from 'react';
-import styles from './LandingPage.module.css';
+// import styles from './LandingPage.module.css';
 import InfoCard from './InfoCard';
-// import { gsap } from 'gsap';
-
-// export const InfoCardsTimeline = new gsap.timeline({
-//   paused: true,
-// });
+// import { AnimationTimeline } from './BackgroundScene/AnimationTimeline';
 
 export default function InfoCardsLayout(props) {
-  const cardRef = useRef();
-  console.log(cardRef);
-  // useEffect(() => {
-  //   InfoCardsTimeline.to(
-  //     cardRef.current.position,
-  //     {
-  //       x: -15,
-  //       y: 0,
-  //       z: 13,
-  //     },
-  //     'full shot'
-  //   );
+  // const cardRef = useRef();
 
-  //   InfoCardsTimeline.to(
-  //     cardRef.current.position,
+  // const { fadeInKey, fadeOutKey } = props;
+
+  // useEffect(() => {
+  //   AnimationTimeline.to(
+  //     cardRef.current.style,
   //     {
-  //       x: -8,
-  //       y: 2,
-  //       z: 0,
+  //       opacity: 1,
   //     },
-  //     'end'
+  //     fadeInKey
+  //   );
+  //   AnimationTimeline.to(
+  //     cardRef.current.style,
+  //     {
+  //       opacity: 0,
+  //     },
+  //     fadeOutKey
   //   );
   // }, [cardRef]);
+
+  //<Label fadeInKey={"fullshot"} fadeOutKey={"torso"} >
 
   return (
     <>
       <InfoCard
-        ref={cardRef}
         left={10}
         width={20}
-        top={100}
+        top={30}
         header={'K-5'}
         paragraph={`The K5, described as a “fully autonomous” security robot, is part of a push by the mayor for more
           law-enforcement technology, which has raised concerns among privacy advocates.`}
+        startKey={''}
+        fadeInKey={'fullshot'}
+        fadeOutKey={'fullshot1'}
       />
 
       <InfoCard
         left={10}
         width={20}
-        top={200}
+        top={70}
         header={''}
         paragraph={`The K5, described as a “fully autonomous” security robot, is part of a push by the mayor for more
           law-enforcement technology, which has raised concerns among privacy advocates.`}
+        startKey={'fullshot'}
+        fadeInKey={'side view'}
+        fadeOutKey={'closeup'}
       />
 
       <InfoCard
         left={70}
         width={20}
-        top={250}
+        top={50}
         header={''}
         paragraph={`The K5, described as a “fully autonomous” security robot, is part of a push by the mayor for more
           law-enforcement technology, which has raised concerns among privacy advocates.`}
+        startKey={'fullshot1'}
+        fadeInKey={'fullshot2'}
+        fadeOutKey={'closeup'}
       />
     </>
   );

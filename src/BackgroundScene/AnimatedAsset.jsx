@@ -1,14 +1,23 @@
-import { useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useGLTF, Html } from '@react-three/drei';
 import { AnimationTimeline } from './AnimationTimeline';
+import { useLoader } from '@react-three/fiber';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { useFrame } from '@react-three/fiber';
 
 import styles from '../ProjectCard/ProjectCard.module.css';
 
 function AnimatedAsset(props) {
   const modelRef = useRef();
   const group = useRef();
+  const [rotationSpeed, setRotationSpeed] = useState(0.0);
   const { position, scale, modelUrl } = props;
-  const gltf = useGLTF(modelUrl);
+  // const gltf = useGLTF(modelUrl);
+  const gltf = useLoader(GLTFLoader, 'assets/k5_nypdrobot.glb');
+
+  useFrame(() => {
+    modelRef.current.rotation.y += rotationSpeed;
+  });
 
   // const headRef = useRef();
   // const torsoRef = useRef();

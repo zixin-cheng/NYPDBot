@@ -37,12 +37,13 @@ export default function InfoCardsLayout(props) {
         header={'K-5'}
         paragraph={`The K5, described as a “fully autonomous” security robot, is part of a push by the mayor for more
           law-enforcement technology, which has raised concerns among privacy advocates.`}
-        startKey={''}
-        fadeInKey={'fullshot'}
-        fadeOutKey={'fullshot1'}
+        startKey={'5'}
+        fadeInKey={'6'}
+        fadeOutKey={'7'}
+        endKey={'8'}
       />
 
-      <InfoCard
+      {/* <InfoCard
         left={10}
         width={20}
         top={70}
@@ -52,7 +53,7 @@ export default function InfoCardsLayout(props) {
         startKey={'fullshot'}
         fadeInKey={'side view'}
         fadeOutKey={'closeup'}
-      />
+      /> */}
 
       <InfoCard
         left={70}
@@ -61,9 +62,10 @@ export default function InfoCardsLayout(props) {
         header={''}
         paragraph={`The K5, described as a “fully autonomous” security robot, is part of a push by the mayor for more
           law-enforcement technology, which has raised concerns among privacy advocates.`}
-        startKey={'fullshot1'}
-        fadeInKey={'fullshot2'}
-        fadeOutKey={'closeup'}
+        startKey={'9'}
+        fadeInKey={'10'}
+        fadeOutKey={'11'}
+        endKey={'12'}
       />
     </>
   );

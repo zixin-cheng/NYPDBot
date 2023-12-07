@@ -14,27 +14,7 @@ function AnimatedCamera() {
         y: 0,
         z: 12,
       },
-      'fullshot'
-    );
-
-    AnimationTimeline.to(
-      cameraRef.current.position,
-      {
-        x: 0,
-        y: 0.1,
-        z: 12,
-      },
-      'fullshot1'
-    );
-
-    AnimationTimeline.to(
-      cameraRef.current.position,
-      {
-        x: 0.1,
-        y: 0.1,
-        z: 12,
-      },
-      'fullshot2'
+      '1'
     );
 
     AnimationTimeline.to(
@@ -42,19 +22,125 @@ function AnimatedCamera() {
       {
         x: 0,
         y: 0,
-        z: 10,
+        z: 12,
       },
-      'side view'
+      '2'
     );
 
     AnimationTimeline.to(
       cameraRef.current.position,
       {
         x: 0,
-        y: 0.1,
+        y: 0,
+        z: 12,
+      },
+      '3'
+    );
+
+    AnimationTimeline.to(
+      cameraRef.current.position,
+      {
+        x: 0,
+        y: 0,
+        z: 12,
+      },
+      '4'
+    );
+
+    AnimationTimeline.to(
+      cameraRef.current.position,
+      {
+        x: 0.5,
+        y: 1,
+        z: 15,
+      },
+      '5'
+    );
+
+    AnimationTimeline.to(
+      cameraRef.current.position,
+      {
+        x: 0.5,
+        y: 1,
+        z: 15,
+      },
+      '6'
+    );
+
+    AnimationTimeline.to(
+      cameraRef.current.position,
+      {
+        x: 0.5,
+        y: 1,
+        z: 15,
+      },
+      '7'
+    );
+
+    AnimationTimeline.to(
+      cameraRef.current.position,
+      {
+        x: 0.5,
+        y: 1,
+        z: 15,
+      },
+      '8'
+    );
+    AnimationTimeline.to(
+      cameraRef.current.position,
+      {
+        x: 0.5,
+        y: 1,
+        z: 15,
+      },
+      '9'
+    );
+    AnimationTimeline.to(
+      cameraRef.current.position,
+      {
+        x: 0.5,
+        y: 1,
+        z: 15,
+      },
+      '10'
+    );
+
+    AnimationTimeline.to(
+      cameraRef.current.position,
+      {
+        x: 0.5,
+        y: 1,
+        z: 15,
+      },
+      '11'
+    );
+    AnimationTimeline.to(
+      cameraRef.current.position,
+      {
+        x: 0.5,
+        y: 1,
+        z: 15,
+      },
+      '12'
+    );
+    AnimationTimeline.to(
+      cameraRef.current.position,
+      {
+        x: 0.5,
+        y: 1,
+        z: 15,
+      },
+      '13'
+    );
+
+    AnimationTimeline.to(
+      cameraRef.current.position,
+      {
+        x: 0.5,
+        y: 1,
         z: 10,
       },
-      'closeup'
+      '14'
     );
   }, [cameraRef]);
 

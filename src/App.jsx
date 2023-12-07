@@ -2,9 +2,13 @@ import React, { useEffect } from 'react';
 
 import Landing from './Landing';
 import InfoCardsLayout from './InfoCardsLayout';
+import Scene from './BackgroundScene/Scene';
+import HeightChart from './components/HeightChart';
+import InfoCard from './InfoCard';
+
 import styles from './ProjectCard/ProjectCard.module.css';
 import './styles/global.css';
-import Scene from './BackgroundScene/Scene';
+
 import { AnimationTimeline } from './BackgroundScene/AnimationTimeline';
 
 /**
@@ -39,6 +43,7 @@ function App() {
     <div className={styles.article_wrapper}>
       <Landing />
       <InfoCardsLayout />
+      <HeightChart imgSrc={require('./assets/height_chart_reference.png')} />
 
       <Scene />
       {/* <ContactInfo /> */}

@@ -23,8 +23,8 @@ function Scene() {
           <AnimatedAsset />
           {/* <AnimatedLabel /> */}
 
-          <RingHighlight fadeInKey={'button1'} fadeOutKey={'button3'} position={[0, 2.9, 0]} />
-          <RingHighlight fadeInKey={'camera3'} fadeOutKey={'specs5'} position={[0, 3.825, 0]} />
+          <RingHighlight fadeInKey={'button1'} fadeOutKey={'button3'} position={[0.01, 3.66, 1.1]} scale={[1, 1, 1]} />
+          <RingHighlight fadeInKey={'camera3'} fadeOutKey={'specs5'} position={[0, 3.9, 1.4]} scale={[2, 2, 1]} />
 
           <meshStandardMaterial roughness={0.3} metalness={0.6} />
         </Suspense>

@@ -8,7 +8,6 @@ export default function HeightChart(props) {
 
   useEffect(() => {
     if (imgRef.current) {
-      console.log(imgRef.current.style);
       AnimationTimeline.to(
         imgRef.current.style,
         {

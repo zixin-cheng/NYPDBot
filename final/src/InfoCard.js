@@ -53,7 +53,6 @@ export default function InfoCard(props) {
         opacity: '0',
       }}
     >
-      <div className={styles.info_header}>{header}</div>
       <div className={styles.info_paragraph}>{paragraph}</div>
     </div>
   );

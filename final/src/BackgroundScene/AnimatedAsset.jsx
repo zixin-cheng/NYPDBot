@@ -3,6 +3,7 @@ import { useLoader } from '@react-three/fiber';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import AnimatedLabel from './AnimatedLabel';
 import { AnimationTimeline } from './AnimationTimeline';
+import RingHighlight from './RingHighlight';
 
 function AnimatedAsset(props) {
   const modelRef = useRef();
@@ -11,12 +12,13 @@ function AnimatedAsset(props) {
   const gltf = useLoader(GLTFLoader, '/k5_nypdrobot.glb');
 
   useEffect(() => {
+    // Rotation Animation
     AnimationTimeline.to(
       group.current.rotation,
       {
         y: 0.5,
       },
-      'map1'
+      'intro2'
     );
 
     AnimationTimeline.to(
@@ -24,7 +26,7 @@ function AnimatedAsset(props) {
       {
         y: 1,
       },
-      'map2'
+      'intro3'
     );
 
     AnimationTimeline.to(
@@ -32,7 +34,7 @@ function AnimatedAsset(props) {
       {
         y: 1.5,
       },
-      'map3'
+      'intro4'
     );
 
     AnimationTimeline.to(
@@ -40,7 +42,7 @@ function AnimatedAsset(props) {
       {
         y: 2,
       },
-      'map4'
+      'intro5'
     );
 
     AnimationTimeline.to(
@@ -48,106 +50,134 @@ function AnimatedAsset(props) {
       {
         y: 2.5,
       },
-      'map5'
+      'intro6'
     );
     AnimationTimeline.to(
       group.current.rotation,
       {
         y: 3,
       },
-      'map6'
+      'intro7'
     );
     AnimationTimeline.to(
       group.current.rotation,
       {
         y: 3.5,
       },
-      'map7'
+      'intro8'
     );
     AnimationTimeline.to(
       group.current.rotation,
       {
         y: 4,
       },
-      'map8'
+      'intro9'
     );
     AnimationTimeline.to(
       group.current.rotation,
       {
         y: 4.5,
       },
-      'map9'
+      'height'
     );
     AnimationTimeline.to(
       group.current.rotation,
       {
         y: 5,
       },
-      'img'
+      'height1'
     );
     AnimationTimeline.to(
       group.current.rotation,
       {
-        y: 5.5,
+        y: 6.3,
       },
-      'img1'
-    );
-    AnimationTimeline.to(
-      group.current.rotation,
-      {
-        y: 6,
-      },
-      'img2'
-    );
-    AnimationTimeline.to(
-      group.current.rotation,
-      {
-        y: 6.5,
-      },
-      'img3'
-    );
-    AnimationTimeline.to(
-      group.current.rotation,
-      {
-        y: 7,
-      },
-      'img4'
+      'height2'
     );
 
     AnimationTimeline.to(
       group.current.rotation,
       {
-        y: 7.5,
+        y: 6.3,
       },
-      'img5'
+      'specs4'
+    );
+
+    AnimationTimeline.to(
+      group.current.rotation,
+      {
+        y: 3.14,
+      },
+      'button'
     );
     AnimationTimeline.to(
       group.current.rotation,
       {
-        y: 8,
+        y: 3.14,
       },
-      'img6'
+      'button4'
     );
     AnimationTimeline.to(
       group.current.rotation,
       {
-        y: 8.5,
+        y: 2.5,
       },
-      'img7'
+      'camera'
     );
     AnimationTimeline.to(
       group.current.rotation,
       {
-        y: 9,
+        y: 2,
       },
-      'img8'
+      'camera1'
     );
     AnimationTimeline.to(
       group.current.rotation,
       {
-        y: 10,
+        y: 1.5,
       },
-      'img9'
+      'camera2'
+    );
+    AnimationTimeline.to(
+      group.current.rotation,
+      {
+        y: 1,
+      },
+      'camera3'
+    );
+    AnimationTimeline.to(
+      group.current.rotation,
+      {
+        y: 0.5,
+      },
+      'camera4'
+    );
+    AnimationTimeline.to(
+      group.current.rotation,
+      {
+        y: 0,
+      },
+      'spec5'
+    );
+
+    // Position Animation
+    AnimationTimeline.to(
+      group.current.position,
+      {
+        x: 0,
+        y: 0,
+        z: 0,
+      },
+      'spec8'
+    );
+    AnimationTimeline.to(
+      group.current.position,
+      {
+        x: -126,
+        y: 52,
+        z: 13,
+      },
+      'map'
     );
   }, [group]);
 
@@ -157,16 +187,44 @@ function AnimatedAsset(props) {
         ref={modelRef}
         position={position ? position : [0, -5, 0]}
         scale={scale ? scale : [3, 3, 3]}
-        rotation={[0, 0, 0]}
+        rotation={[0, 3.14, 0]}
         object={gltf.scene}
+        alpha={0}
       ></primitive>
 
-      <AnimatedLabel fadeInKey={'button1'} fadeOutKey={'button3'} position={[0.1, 2.5, 0]}>
+      {/* Text Labels */}
+      <AnimatedLabel fadeInKey={'button1'} fadeOutKey={'button3'} position={[0, 3.85, 0]}>
         Button
       </AnimatedLabel>
-      <AnimatedLabel fadeInKey={'camera3'} fadeOutKey={'specs5'} position={[-0.8, 4.1, 0]}>
+      <AnimatedLabel fadeInKey={'button4'} fadeOutKey={'spec5'} position={[0.43, 4.2, -1.3]}>
         Camera
       </AnimatedLabel>
+      <AnimatedLabel fadeInKey={'button4'} fadeOutKey={'spec5'} position={[-0.8, 4, -0.48]}>
+        Camera
+      </AnimatedLabel>
+
+      {/* Camera Highlights */}
+      <RingHighlight
+        fadeInKey={'button4'}
+        fadeOutKey={'spec5'}
+        position={[0, 3.89, 0.9]}
+        scale={[2, 2, 1]}
+        rotation={[0, 0, 0]}
+      />
+      <RingHighlight
+        fadeInKey={'button4'}
+        fadeOutKey={'spec5'}
+        position={[-1, 3.8, 0]}
+        scale={[2, 2, 1]}
+        rotation={[0, 1.5, 0]}
+      />
+      <RingHighlight
+        fadeInKey={'button4'}
+        fadeOutKey={'spec5'}
+        position={[0, 3.86, -0.9]}
+        scale={[2, 2, 1]}
+        rotation={[0, 0, 0]}
+      />
     </group>
   );
 }

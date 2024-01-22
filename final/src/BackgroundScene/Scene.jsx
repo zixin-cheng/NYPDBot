@@ -5,6 +5,7 @@ import AnimatedCamera from './AnimatedCamera';
 import styles from '../LandingPage.module.css';
 import AnimatedAsset from './AnimatedAsset';
 import RingHighlight from './RingHighlight';
+import StationAnimation from './StationAnimation';
 
 function Scene() {
   return (
@@ -21,10 +22,17 @@ function Scene() {
         {/* Objects 📦 */}
         <Suspense fallback={null}>
           <AnimatedAsset />
+          <StationAnimation modelUrl="/station_animation2.glb" />
           {/* <AnimatedLabel /> */}
 
-          <RingHighlight fadeInKey={'button1'} fadeOutKey={'button3'} position={[0.01, 3.66, 1.1]} scale={[1, 1, 1]} />
-          <RingHighlight fadeInKey={'camera3'} fadeOutKey={'specs5'} position={[0, 3.9, 1.4]} scale={[2, 2, 1]} />
+          <RingHighlight
+            fadeInKey={'button1'}
+            fadeOutKey={'button3'}
+            position={[0.01, 3.66, 1.1]}
+            scale={[1, 1, 1]}
+            rotation={[0, 0, 0]}
+          />
+          {/* <RingHighlight fadeInKey={'button4'} fadeOutKey={'camera1'} position={[0, 3.8, 1.4]} scale={[2, 2, 1]} /> */}
 
           <meshStandardMaterial roughness={0.3} metalness={0.6} />
         </Suspense>

@@ -4,7 +4,7 @@
 .annotation {
   transform: translate3d(calc(50%), calc(-50%), 0);
   text-align: left;
-  background: var(--c-light-blue);
+  background: var(--c-yellow);
   color: #ffffff;
   padding: 10px 15px;
   border-radius: 5px;

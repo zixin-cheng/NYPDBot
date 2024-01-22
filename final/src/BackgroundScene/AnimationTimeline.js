@@ -72,3 +72,10 @@ AnimationTimeline.labels.img6 = 28;
 AnimationTimeline.labels.img7 = 28.5;
 AnimationTimeline.labels.img8 = 29;
 AnimationTimeline.labels.img9 = 29.5;
+// //STATION ANIMATION
+// AnimationTimeline.labels.station1 = 30;
+// AnimationTimeline.labels.station2 = 30.5;
+// AnimationTimeline.labels.station3 = 31;
+// AnimationTimeline.labels.station4 = 31.5;
+// AnimationTimeline.labels.station5 = 32;
+// AnimationTimeline.labels.station6 = 32.5;

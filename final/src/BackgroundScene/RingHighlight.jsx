@@ -3,7 +3,7 @@ import { DoubleSide } from 'three';
 import { AnimationTimeline } from './AnimationTimeline';
 
 function RingHighlight(props) {
-  const { fadeInKey, fadeOutKey, position, scale } = props;
+  const { fadeInKey, fadeOutKey, position, scale, rotation } = props;
   const ringRef = useRef();
 
   useEffect(() => {
@@ -24,7 +24,7 @@ function RingHighlight(props) {
   }, [ringRef]);
 
   return (
-    <mesh ref={ringRef} position={position} scale={scale}>
+    <mesh ref={ringRef} position={position} scale={scale} rotation={rotation}>
       <ringGeometry args={[0.04, 0.06, 32]} />
       <meshBasicMaterial transparent={true} opacity={0} color="#edac00" side={DoubleSide} />
     </mesh>

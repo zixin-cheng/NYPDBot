@@ -7,30 +7,35 @@ export default function InfoCardsLayout() {
   return (
     <>
       {/*                    LANDING / INTRO                   */}
-      <InfoCard
-        startKey={'intro1'}
-        fadeInKey={'intro2'}
-        fadeOutKey={'intro3'}
-        endKey={'intro4'}
-        left={10}
-        width={300}
-        top={75}
-        header={''}
-        paragraph={`“Nine dollars an hour. Nine dollars an hour,” New York City Mayor Eric Adams said proudly at a press conference reported on by The New York Times and other outlets.`}
-      />
-      <InfoCard
-        startKey={'intro2'}
-        fadeInKey={'intro3'}
-        fadeOutKey={'intro4'}
-        endKey={'intro5'}
-        left={70}
-        width={300}
-        top={80}
-        header={''}
-        paragraph={`“I know you wanted to write how we’re wasting money,” he continued, addressing the gathered crowd of press and city officials, “but I’m sorry I’m taking your thunder away.”`}
-      />
+      <div style={{ display: 'flex', position: 'absolute', height: '100vh', alignItems: 'center' }}>
+        <InfoCard
+          startKey={'intro1'}
+          fadeInKey={'intro2'}
+          fadeOutKey={'intro4'}
+          endKey={'intro5'}
+          left={15}
+          width={500}
+          // top={35}
+          header={''}
+          paragraph={`“Nine dollars an hour. Nine dollars an hour,” New York City Mayor Eric Adams said proudly at a press conference reported on by The New York Times and other outlets.
+        \n 
+        “I know you wanted to write how we’re wasting money,” he continued, addressing the gathered crowd of press and city officials, “but I’m sorry I’m taking your thunder away.”`}
+        />
 
-      <FullPageCard
+        <InfoCard
+          startKey={'intro4'}
+          fadeInKey={'intro6'}
+          fadeOutKey={'height'}
+          endKey={'height1'}
+          left={15}
+          width={500}
+          top={33}
+          header={''}
+          paragraph={`“This is below minimum wage,” Adams added. “No bathroom breaks, no meal breaks.” \n 
+        Adams was talking about the price for which the New York City Police Department signed a lease on its K5 robot, a 420-pound automated surveillance system. In September, Adams unveiled the city’s new K5, decked out in white and blue NYPD livery, at a press conference in Times Square-42nd St Station. The robot was set to patrol said station for a two-month trial.`}
+        />
+      </div>
+      {/* <FullPageCard
         startKey={'intro4'}
         fadeInKey={'intro6'}
         fadeOutKey={'height'}
@@ -38,7 +43,7 @@ export default function InfoCardsLayout() {
         paragraph={`
         “This is below minimum wage,” Adams added. “No bathroom breaks, no meal breaks.” \n 
         Adams was talking about the price for which the New York City Police Department signed a lease on its K5 robot, a 420-pound automated surveillance system. In September, Adams unveiled the city’s new K5, decked out in white and blue NYPD livery, at a press conference in Times Square-42nd St Station. The robot was set to patrol said station for a two-month trial.`}
-      />
+      /> */}
 
       {/*                   HEIGHT SCENE                  */}
 
@@ -48,106 +53,105 @@ export default function InfoCardsLayout() {
           fadeInKey={'height2'}
           fadeOutKey={'height4'}
           endKey={'height5'}
-          // left={0}
           width={800}
-          top={150}
-          header={''}
-          paragraph={`The K5 robot is equipped with four cameras that allow it to continually capture video of its surroundings. At about 5’2”, the sleek, limbless robot is hard to miss. Bright LEDs shine out from its front side and along gaps in panels along its sides–like if a NYPD cruiser had underlighting installed. `}
+          top={75}
+          paragraph={`At about 5’2”, the sleek, limbless robot is hard to miss. Bright LEDs shine out from its front side and along gaps in panels along its sides–like if a NYPD cruiser had underlighting installed. `}
         />
       </div>
 
       <FullPageCard
         startKey={'height4'}
         fadeInKey={'height5'}
-        fadeOutKey={'height5'}
-        endKey={'specs1'}
-        paragraph={`
-        At maximum speed, according to manufacturers Knightscope, K5 can move at 3mph. On a recent weekday in November, the K5 didn’t move an inch from its spot in Times Square-42nd St. station for at least an hour. All the while, at least one officer, usually two, were standing near the motionless robot.`}
-      />
-
-      {/*                    SPECS                   */}
-      <InfoCard
-        startKey={'specs1'}
-        fadeInKey={'specs2'}
         fadeOutKey={'specs4'}
         endKey={'button'}
-        left={10}
-        width={300}
-        top={150}
-        header={''}
-        paragraph={`Some math: at $9 hour, assuming the city paid for every hour of every day, then two months of continuous K5 service cost taxpayers a little over $13,000.`}
+        paragraph={
+          <>
+            At maximum speed, according to manufacturers Knightscope, K5 can move at 3mph. On a recent weekday in
+            November, the K5 didn’t move an inch from its spot in Times Square-42nd St. station for at least an hour.
+            All the while, at least one officer, usually two, were standing near the motionless robot.
+            <br />
+            <br />
+            Some math: at $9 hour, assuming the city paid for every hour of every day, then two months of continuous K5
+            service cost taxpayers a little over $13,000.
+            <br />
+            <br />
+            At a starting salary of $58,580, a new NYPD officer can expect to make around $9,700 pre-tax over a
+            two-month period of work.
+            <br />
+            <br />
+            More senior officers and those working overtime can expect to make much more.
+          </>
+        }
       />
-      <InfoCard
-        startKey={'specs1'}
-        fadeInKey={'specs2'}
-        fadeOutKey={'specs4'}
-        endKey={'button'}
-        left={70}
-        width={300}
-        top={150}
-        header={''}
-        paragraph={`At a starting salary of $58,580, a new NYPD officer can expect to make around $9,700 pre-tax over a two-month period of work.`}
-      />
-      <div style={{ display: 'flex', width: '100vw', justifyContent: 'center' }}>
+      {/* <div style={{ display: 'flex', width: '100vw', justifyContent: 'center' }}>
         <InfoCard
           startKey={'specs1'}
           fadeInKey={'specs2'}
           fadeOutKey={'specs4'}
           endKey={'button'}
-          // left={20}
           width={800}
-          top={195}
-          header={''}
+          top={25}
           paragraph={`More senior officers and those working overtime can expect to make much more.`}
         />
-      </div>
+      </div> */}
+
       {/*                    SPECS:BUTTON/CAMERA                   */}
-      <InfoCard
-        startKey={'button1'}
-        fadeInKey={'button1'}
-        fadeOutKey={'button2'}
-        endKey={'button3'}
-        left={10}
-        width={300}
-        top={185}
-        header={''}
-        paragraph={`When the button is pressed, the robot will connect you to a live agent who is available 24/7 for questions, concerns, or incident reports.`}
-      />
-      <InfoCard
+      <div style={{ display: 'flex', width: '100vw', justifyContent: 'center' }}>
+        <InfoCard
+          startKey={'button1'}
+          fadeInKey={'button1'}
+          fadeOutKey={'button2'}
+          endKey={'button3'}
+          width={800}
+          top={75}
+          header={''}
+          paragraph={`When the button is pressed, the robot will connect you to a live agent who is available 24/7 for questions, concerns, or incident reports.`}
+        />
+        {/* <InfoCard
         startKey={'button'}
         fadeInKey={'button1'}
         fadeOutKey={'button2'}
         endKey={'button3'}
         left={70}
         width={300}
-        top={190}
+        top={25}
         header={''}
         paragraph={`“This call may be recorded for your safety.”`}
-      />
+      /> */}
 
-      <InfoCard
-        startKey={'button3'}
-        fadeInKey={'button4'}
-        fadeOutKey={'camera'}
-        endKey={'camera1'}
-        left={10}
-        width={300}
-        top={190}
-        header={''}
-        paragraph={`Video will be recorded, which can be viewed in case of emergencies or crimes. However, neither audio recording nor facial recognition are implemented.`}
-      />
-
-      <InfoCard
+        <InfoCard
+          startKey={'button3'}
+          fadeInKey={'button4'}
+          fadeOutKey={'camera3'}
+          endKey={'camera4'}
+          width={800}
+          top={60}
+          paragraph={
+            <>
+              The K5 robot is equipped with four cameras that allow it to continually capture video of its surroundings.
+              Video will be recorded, which can be viewed in case of emergencies or crimes.
+              <br />
+              <br />
+              Police will then run images from the video recording through its facial recognition unit to identify
+              potential crime suspects.
+              <br />
+              <br />
+              However, neither audio recording nor facial recognition are implemented.
+            </>
+          }
+        />
+      </div>
+      {/* <InfoCard
         startKey={'camera1'}
         fadeInKey={'camera2'}
         fadeOutKey={'camera4'}
         endKey={'specs5'}
         left={70}
         width={300}
-        top={215}
+        top={25}
         header={''}
         paragraph={`Police will then run images from the video recording through its facial recognition unit to identify potential crime suspects.`}
-      />
+      /> */}
 
       {/*                    SPECS CONT'D / HTML                   */}
       <FullPageCard
@@ -168,66 +172,85 @@ export default function InfoCardsLayout() {
         fadeInKey={'map1'}
         fadeOutKey={'map2'}
         endKey={'map3'}
-        left={10}
-        width={300}
-        top={235}
-        header={''}
+        left={20}
+        width={400}
+        top={55}
         paragraph={`Since its unveiling in September, the K5 bot leased by the NYPD has remained in one spot, at the entrance to the station at 42nd Street and 7th Avenue.`}
-      />
-      <InfoCard
-        startKey={'map1'}
-        fadeInKey={'map2'}
-        fadeOutKey={'map3'}
-        endKey={'map4'}
-        left={70}
-        width={300}
-        top={245}
-        header={''}
-        paragraph={`What if something happened to a subway rider at the far end of the A train platform? Assume they know the K5 robot is at the 42nd and 7th entrance. `}
       />
       <InfoCard
         startKey={'map2'}
         fadeInKey={'map3'}
         fadeOutKey={'map4'}
         endKey={'map5'}
-        left={10}
-        width={300}
-        top={270}
-        header={''}
+        left={20}
+        width={400}
+        top={55}
+        paragraph={
+          <>
+            What if something happened to a subway rider at the far end of the A train platform?
+            <br />
+            <br />
+            Assume they know the K5 robot is at the 42nd and 7th entrance.{' '}
+          </>
+        }
+      />
+      <InfoCard
+        startKey={'map4'}
+        fadeInKey={'map5'}
+        fadeOutKey={'map9'}
+        endKey={'map10'}
+        left={20}
+        width={400}
+        top={55}
         paragraph={`One of the writers of this piece timed how long it took him, walking at a brisk pace without stopping, to get from the A train platform to the bot’s position.`}
       />
       <InfoCard
-        startKey={'map3'}
-        fadeInKey={'map4'}
-        fadeOutKey={'map5'}
-        endKey={'map6'}
-        left={70}
-        width={300}
-        top={290}
+        startKey={'map10'}
+        fadeInKey={'map11'}
+        fadeOutKey={'map12'}
+        endKey={'map13'}
+        left={20}
+        width={400}
+        top={55}
         header={''}
         paragraph={`All told, it took over five and a half minutes.`}
       />
 
       <FullPageCard
-        startKey={'map6'}
-        fadeInKey={'map7'}
-        fadeOutKey={'map9'}
+        startKey={'map13'}
+        fadeInKey={'map14'}
+        fadeOutKey={'map15'}
         endKey={'img'}
-        paragraph={`
-        Though the spectacle of its unveiling might’ve suggested otherwise, the NYPD putting a single K5 into service was realistically never going to result in much more than a robot standing in place. The K5 cannot go up and down stairs, and Times Square-42nd Street is a sprawling multi-level station. Though both connected 42nd St stations are on the MTA’s list of ADA-accessible stations, routes through both that avoid stairs are winding. A K5, if left to navigate the entire station, would be a particularly slow monitoring tool. \n
-        Anyone with more than a passing familiarity with the K5 before Adams’ announcement would already know this, and plenty of people are. First unveiled in 2014, Knightscope’s K5 robots have been deployed in numerous locales for years now. Criticism of the machines–and outright failures–are well-documented. \n
-        K5s started making headlines soon after they were released. Perhaps predictably, the robots were not welcomed or even just tolerated in every place they were deployed.`}
+        paragraph={
+          <>
+            Though the spectacle of its unveiling might’ve suggested otherwise, the NYPD putting a single K5 into
+            service was realistically never going to result in much more than a robot standing in place. The K5 cannot
+            go up and down stairs, and Times Square-42nd Street is a sprawling multi-level station. Though both
+            connected 42nd St stations are on the MTA’s list of ADA-accessible stations, routes through both that avoid
+            stairs are winding. A K5, if left to navigate the entire station, would be a particularly slow monitoring
+            tool.
+            <br />
+            <br />
+            Anyone with more than a passing familiarity with the K5 before Adams’ announcement would already know this,
+            and plenty of people are. First unveiled in 2014, Knightscope’s K5 robots have been deployed in numerous
+            locales for years now. Criticism of the machines–and outright failures–are well-documented.
+            <br />
+            <br />
+            K5s started making headlines soon after they were released. Perhaps predictably, the robots were not
+            welcomed or even just tolerated in every place they were deployed.
+          </>
+        }
       />
 
       {/*                    IMAGES                   */}
-      <InfoCard
+      {/* <InfoCard
         startKey={'img'}
         fadeInKey={'img1'}
         fadeOutKey={'img2'}
         endKey={'img3'}
         left={10}
         width={300}
-        top={280}
+        top={25}
         header={''}
         paragraph={`In 2017, The Verge reported on the swift public backlash to a San Francisco animal hospital’s decision to use a K5 to intimidate homeless people. `}
       />
@@ -238,7 +261,7 @@ export default function InfoCardsLayout() {
         endKey={'img4'}
         left={70}
         width={300}
-        top={300}
+        top={25}
         header={''}
         paragraph={`Accidents involving K5s also made the news: in the summer of 2016, Palo Alto’s ABC affiliate reported on a child getting knocked over and injured by a K5 deployed in a shopping mall. `}
       />
@@ -249,7 +272,7 @@ export default function InfoCardsLayout() {
         endKey={'img6'}
         left={10}
         width={300}
-        top={320}
+        top={25}
         header={''}
         paragraph={`A year later, a K5 deployed in DC went viral when a Twitter used photographed it having fallen into a fountain.`}
       />
@@ -262,7 +285,7 @@ export default function InfoCardsLayout() {
         paragraph={`
         At the time, numerous internet commenters and bloggers joked that the robot had tried to take its own life. Regardless, decision makers like Mayor Adams keep the K5 living on as a surveillance product. \n
         For all its cameras and the talk of its usefulness to law enforcement, however, the K5 deployed in New York’s subway system mainly seemed to be there for one purpose: people taking photos with the robot they heard about on the news.`}
-      />
+      /> */}
     </>
   );
 }

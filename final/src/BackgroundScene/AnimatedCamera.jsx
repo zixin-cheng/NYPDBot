@@ -55,8 +55,8 @@ function AnimatedCamera() {
     AnimationTimeline.to(
       cameraRef.current.position,
       {
-        x: 0,
-        y: 3,
+        x: -4,
+        y: 0,
         z: 13,
       },
       'intro'
@@ -64,8 +64,8 @@ function AnimatedCamera() {
     AnimationTimeline.to(
       cameraRef.current.position,
       {
-        x: 0,
-        y: 2,
+        x: -4,
+        y: 0,
         z: 13,
       },
       'intro1'
@@ -73,8 +73,8 @@ function AnimatedCamera() {
     AnimationTimeline.to(
       cameraRef.current.position,
       {
-        x: 0,
-        y: 2,
+        x: -4,
+        y: 0,
         z: 13,
       },
       'intro2'
@@ -82,8 +82,8 @@ function AnimatedCamera() {
     AnimationTimeline.to(
       cameraRef.current.position,
       {
-        x: 0,
-        y: 2,
+        x: -4,
+        y: 0,
         z: 13,
       },
       'intro3'
@@ -91,8 +91,8 @@ function AnimatedCamera() {
     AnimationTimeline.to(
       cameraRef.current.position,
       {
-        x: 0,
-        y: 2,
+        x: -4,
+        y: 0,
         z: 13,
       },
       'intro4'
@@ -100,8 +100,8 @@ function AnimatedCamera() {
     AnimationTimeline.to(
       cameraRef.current.position,
       {
-        x: 0,
-        y: 2,
+        x: -4,
+        y: 0,
         z: 13,
       },
       'intro5'
@@ -109,8 +109,8 @@ function AnimatedCamera() {
     AnimationTimeline.to(
       cameraRef.current.position,
       {
-        x: 0,
-        y: 2,
+        x: -4,
+        y: 0,
         z: 13,
       },
       'intro6'
@@ -118,8 +118,8 @@ function AnimatedCamera() {
     AnimationTimeline.to(
       cameraRef.current.position,
       {
-        x: 0,
-        y: 2,
+        x: -4,
+        y: 0,
         z: 13,
       },
       'intro7'
@@ -127,8 +127,8 @@ function AnimatedCamera() {
     AnimationTimeline.to(
       cameraRef.current.position,
       {
-        x: 0,
-        y: 2,
+        x: -4,
+        y: 0,
         z: 13,
       },
       'intro8'
@@ -136,8 +136,8 @@ function AnimatedCamera() {
     AnimationTimeline.to(
       cameraRef.current.position,
       {
-        x: 0,
-        y: 2,
+        x: -4,
+        y: 0,
         z: 13,
       },
       'intro9'
@@ -145,8 +145,8 @@ function AnimatedCamera() {
     AnimationTimeline.to(
       cameraRef.current.position,
       {
-        x: 0,
-        y: 2,
+        x: -4,
+        y: 0,
         z: 13,
       },
       'height'
@@ -155,8 +155,8 @@ function AnimatedCamera() {
       cameraRef.current.position,
       {
         x: 0.5,
-        y: 1,
-        z: 15,
+        y: -1.1,
+        z: 18.2,
       },
       'height1'
     );
@@ -164,8 +164,8 @@ function AnimatedCamera() {
       cameraRef.current.position,
       {
         x: 0.5,
-        y: 1,
-        z: 15,
+        y: -1.1,
+        z: 18.2,
       },
       'height2'
     );
@@ -173,8 +173,8 @@ function AnimatedCamera() {
       cameraRef.current.position,
       {
         x: 0.5,
-        y: 1,
-        z: 15,
+        y: -1.1,
+        z: 18.2,
       },
       'height3'
     );
@@ -182,17 +182,17 @@ function AnimatedCamera() {
       cameraRef.current.position,
       {
         x: 0.5,
-        y: 1,
-        z: 15,
+        y: -1.1,
+        z: 18.2,
       },
       'height4'
     );
     AnimationTimeline.to(
       cameraRef.current.position,
       {
-        x: 0.5,
-        y: 1,
-        z: 15,
+        x: 0,
+        y: 2,
+        z: 13,
       },
       'height5'
     );
@@ -245,8 +245,8 @@ function AnimatedCamera() {
       cameraRef.current.position,
       {
         x: 0,
-        y: 4,
-        z: 6,
+        y: 2,
+        z: 13,
       },
       'button'
     );
@@ -255,8 +255,8 @@ function AnimatedCamera() {
       cameraRef.current.position,
       {
         x: 0,
-        y: 3,
-        z: 5,
+        y: 3.2,
+        z: 4,
       },
       'button1'
     );
@@ -264,7 +264,7 @@ function AnimatedCamera() {
       cameraRef.current.position,
       {
         x: 0,
-        y: 3,
+        y: 3.2,
         z: 4,
       },
       'button2'
@@ -273,7 +273,7 @@ function AnimatedCamera() {
       cameraRef.current.position,
       {
         x: 0,
-        y: 3,
+        y: 3.2,
         z: 4,
       },
       'button3'
@@ -318,8 +318,8 @@ function AnimatedCamera() {
       cameraRef.current.position,
       {
         x: 0,
-        y: 4,
-        z: 3,
+        y: 3,
+        z: 6,
       },
       'camera3'
     );
@@ -327,8 +327,8 @@ function AnimatedCamera() {
       cameraRef.current.position,
       {
         x: 0,
-        y: 4,
-        z: 3,
+        y: 3,
+        z: 6,
       },
       'camera4'
     );
@@ -336,209 +336,11 @@ function AnimatedCamera() {
       cameraRef.current.position,
       {
         x: 0,
-        y: 1,
-        z: 13,
+        y: 3,
+        z: 6,
       },
       'specs5'
     );
-    // AnimationTimeline.to(
-    //   cameraRef.current.position,
-    //   {
-    //     x: 0,
-    //     y: 2,
-    //     z: 13,
-    //   },
-    //   "specs6"
-    // );
-    // AnimationTimeline.to(
-    //   cameraRef.current.position,
-    //   {
-    //     x: 0,
-    //     y: 2,
-    //     z: 13,
-    //   },
-    //   "specs7"
-    // );
-    // AnimationTimeline.to(
-    //   cameraRef.current.position,
-    //   {
-    //     x: 0,
-    //     y: 2,
-    //     z: 13,
-    //   },
-    //   "specs8"
-    // );
-    // AnimationTimeline.to(
-    //   cameraRef.current.position,
-    //   {
-    //     x: 0,
-    //     y: 2,
-    //     z: 13,
-    //   },
-    //   "map"
-    // );
-    // AnimationTimeline.to(
-    //   cameraRef.current.position,
-    //   {
-    //     x: 0,
-    //     y: 1,
-    //     z: 13,
-    //   },
-    //   'map1'
-    // );
-    // AnimationTimeline.to(
-    //   cameraRef.current.position,
-    //   {
-    //     x: -0.2,
-    //     y: 0.9,
-    //     z: 13.5,
-    //   },
-    //   'map2'
-    // );
-    // AnimationTimeline.to(
-    //   cameraRef.current.position,
-    //   {
-    //     x: -0.4,
-    //     y: 0.8,
-    //     z: 14,
-    //   },
-    //   'map3'
-    // );
-    // AnimationTimeline.to(
-    //   cameraRef.current.position,
-    //   {
-    //     x: -0.6,
-    //     y: 0.7,
-    //     z: 14.5,
-    //   },
-    //   'map4'
-    // );
-    // AnimationTimeline.to(
-    //   cameraRef.current.position,
-    //   {
-    //     x: -0.8,
-    //     y: 0.6,
-    //     z: 15,
-    //   },
-    //   'map5'
-    // );
-    // AnimationTimeline.to(
-    //   cameraRef.current.position,
-    //   {
-    //     x: 0,
-    //     y: 2,
-    //     z: 13,
-    //   },
-    //   "map6"
-    // );
-    // AnimationTimeline.to(
-    //   cameraRef.current.position,
-    //   {
-    //     x: 0,
-    //     y: 2,
-    //     z: 13,
-    //   },
-    //   "map7"
-    // );
-    // AnimationTimeline.to(
-    //   cameraRef.current.position,
-    //   {
-    //     x: 0,
-    //     y: 2,
-    //     z: 13,
-    //   },
-    //   "map8"
-    // );
-    // AnimationTimeline.to(
-    //   cameraRef.current.position,
-    //   {
-    //     x: 0,
-    //     y: 2,
-    //     z: 13,
-    //   },
-    //   "map9"
-    // );
-    // AnimationTimeline.to(
-    //   cameraRef.current.position,
-    //   {
-    //     x: 0,
-    //     y: 2,
-    //     z: 13,
-    //   },
-    //   "img"
-    // );
-    // AnimationTimeline.to(
-    //   cameraRef.current.position,
-    //   {
-    //     x: 0,
-    //     y: 2,
-    //     z: 13,
-    //   },
-    //   "img1"
-    // );
-    // AnimationTimeline.to(
-    //   cameraRef.current.position,
-    //   {
-    //     x: 0,
-    //     y: 2,
-    //     z: 13,
-    //   },
-    //   "img2"
-    // );
-    // AnimationTimeline.to(
-    //   cameraRef.current.position,
-    //   {
-    //     x: 0,
-    //     y: 2,
-    //     z: 13,
-    //   },
-    //   "img3"
-    // );
-    // AnimationTimeline.to(
-    //   cameraRef.current.position,
-    //   {
-    //     x: 0,
-    //     y: 2,
-    //     z: 13,
-    //   },
-    //   "img4"
-    // );
-    // AnimationTimeline.to(
-    //   cameraRef.current.position,
-    //   {
-    //     x: 0,
-    //     y: 2,
-    //     z: 13,
-    //   },
-    //   "img5"
-    // );
-    // AnimationTimeline.to(
-    //   cameraRef.current.position,
-    //   {
-    //     x: 0,
-    //     y: 2,
-    //     z: 13,
-    //   },
-    //   "img6"
-    // );
-    // AnimationTimeline.to(
-    //   cameraRef.current.position,
-    //   {
-    //     x: 0,
-    //     y: 2,
-    //     z: 13,
-    //   },
-    //   "img7"
-    // );
-    // AnimationTimeline.to(
-    //   cameraRef.current.position,
-    //   {
-    //     x: 0,
-    //     y: 2,
-    //     z: 13,
-    //   },
-    //   "img8"
-    // );
     AnimationTimeline.to(
       cameraRef.current.position,
       {
@@ -546,13 +348,40 @@ function AnimatedCamera() {
         y: 1,
         z: 13,
       },
+      'specs6'
+    );
+    AnimationTimeline.to(
+      cameraRef.current.position,
+      {
+        x: 0,
+        y: 1,
+        z: 13,
+      },
+      'specs8'
+    );
+
+    AnimationTimeline.to(
+      cameraRef.current.position,
+      {
+        x: 0,
+        y: 0,
+        z: 400,
+      },
+      'map'
+    );
+
+    AnimationTimeline.to(
+      cameraRef.current.position,
+      {
+        x: 0,
+        y: 0,
+        z: 400,
+      },
       'img9'
     );
 
-    console.log(AnimationTimeline.labels);
+    // console.log(AnimationTimeline.labels);
   }, [cameraRef]);
-
-  // console.log(AnimationTimeline.labels)
 
   //LANDING
   AnimationTimeline.labels.land = 0.5;
@@ -612,16 +441,22 @@ function AnimatedCamera() {
   AnimationTimeline.labels.map7 = 24;
   AnimationTimeline.labels.map8 = 24.5;
   AnimationTimeline.labels.map9 = 25;
+  AnimationTimeline.labels.map10 = 25.5;
+  AnimationTimeline.labels.map11 = 26;
+  AnimationTimeline.labels.map12 = 26.5;
+  AnimationTimeline.labels.map13 = 27;
+  AnimationTimeline.labels.map14 = 28;
+  AnimationTimeline.labels.map15 = 28.5;
   //IMAGES
-  AnimationTimeline.labels.img = 25.5;
-  AnimationTimeline.labels.img1 = 26;
-  AnimationTimeline.labels.img3 = 26.5;
-  AnimationTimeline.labels.img4 = 27;
-  AnimationTimeline.labels.img5 = 27.5;
-  AnimationTimeline.labels.img6 = 28;
-  AnimationTimeline.labels.img7 = 28.5;
-  AnimationTimeline.labels.img8 = 29;
-  AnimationTimeline.labels.img9 = 29.5;
+  AnimationTimeline.labels.img = 29;
+  AnimationTimeline.labels.img1 = 29.5;
+  AnimationTimeline.labels.img3 = 30;
+  AnimationTimeline.labels.img4 = 30.5;
+  AnimationTimeline.labels.img5 = 31;
+  AnimationTimeline.labels.img6 = 31.5;
+  AnimationTimeline.labels.img7 = 32;
+  AnimationTimeline.labels.img8 = 32.5;
+  AnimationTimeline.labels.img9 = 33;
 
   return <PerspectiveCamera ref={cameraRef} makeDefault position={[0, 4, 6]} rotation={[0, 0, 0]} />;
 }

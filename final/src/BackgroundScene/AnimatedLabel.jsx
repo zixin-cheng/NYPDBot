@@ -9,7 +9,6 @@ export default function AnimatedLabel(props) {
 
   useEffect(() => {
     if (labelRef.current && labelRef.current.style) {
-      console.log(labelRef.current.style);
       AnimationTimeline.to(
         labelRef.current.style,
         {
